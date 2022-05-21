@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea JavaScript</title>
+    <script src="text.javascript">
+
+    </script>
+</head>
+
+<body>
+    <script>
+        var metros;
+
+        metros = prompt('ingrese la cantidad de metros a realizar:', '')
+
+        if (metros <= 1000) {
+            document.write('se recomienda caminar')
+        } else if (metros <= 10000) {
+            document.write('se recomienda utilizar bicicleta')
+        } else if (metros <= 30000) {
+            document.write('se recomienda utilizar el colectivo')
+        } else if (metros <= 100000) {
+            document.write('se recomienda utilizar un auto')
+        } else if (metros >= 100000) {
+            document.write('se recomienda utilizar un avion')
+        }
+
+    </script>
+
+    <script>
+        var numeros=["uno", "dos","tres","cuatro","cinco","seis","siete","ocho","nueve"]
+        for(var i=0; i<9; i++){
+           console.log('este es el numero mas grande')
+        }
+    </script>
+
+
+</body>
+
+</html>
