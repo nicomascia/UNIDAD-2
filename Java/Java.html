@@ -32,10 +32,15 @@
     </script>
 
     <script>
-        var numeros=["uno", "dos","tres","cuatro","cinco","seis","siete","ocho","nueve"]
-        for(var i=0; i<9; i++){
-           console.log('este es el numero mas grande')
+        var numeros = [1, 2, 3, 4, 5, 9, 6, 8, 7]
+        var mayor=0;
+        for (var i = 0; i < numeros.length; i++) {
+            if (numeros[i] > mayor) {
+                mayor = numeros[i]
+            }
         }
+        console.log('el numero mas grande es' + mayor)
+
     </script>
 
 
