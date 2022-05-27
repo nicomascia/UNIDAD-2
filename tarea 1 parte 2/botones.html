@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botones</title>
+</head>
+
+<body>
+    <div class=contenedor>
+        <div class="cuadrado violeta" onclick="CambiarFondo('purple')"></div>
+        <div class="cuadrado azul" onclick="CambiarFondo('blue')"></div>
+        <div class="cuadrado naranja" onclick="CambiarFondo('orangered')"></div>
+    </div>
+    <style>
+        .contenedor {
+            display: flex;
+        }
+
+        .cuadrado {
+            cursor: pointer;
+            height: 80px;
+            width: 80px;
+        }
+
+        .violeta {
+            background-color: purple;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .naranja {
+            background-color: orangered;
+        }
+    </style>
+    <script>
+        function CambiarFondo(color) {
+            document.querySelector('body').style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
